@@ -10,7 +10,7 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class HeroService {
-  private heroesUrl = 'api/heroes'; // URL to web api
+  private heroesUrl = 'http://localhost:8080/api/heroes'; // URL to web api
 
   constructor(
     private http: HttpClient,
